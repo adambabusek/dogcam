@@ -3,10 +3,15 @@
 	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+	<servlet>
+		<servlet-name>AppServlet</servlet-name>
+		<servlet-class>webcams.controllers.AppServlet</servlet-class>
+	</servlet>
+
 	<servlet-mapping>
-		<!-- <servlet-name>dispatcher</servlet-name>  -->
+		<servlet-name>AppServlet</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
-	
+
 
 </web-app>
