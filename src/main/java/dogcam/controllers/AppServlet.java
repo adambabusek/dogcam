@@ -11,10 +11,10 @@ public class AppServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		resp.setContentType("text/html");
-		resp.getWriter().print("Dogcam App!");
+		response.setContentType("text/html");
+		response.getWriter().print("Dogcam App!");
 	}
 
 	
