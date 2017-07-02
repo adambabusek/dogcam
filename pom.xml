@@ -5,14 +5,14 @@
 	<artifactId>webcams</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>dogcam</name>
+	<name>dogcam-web</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<build>
-		<finalName>dogcam</finalName>
+		<finalName>dogcam-web</finalName>
 
 		<plugins>
 			<plugin>

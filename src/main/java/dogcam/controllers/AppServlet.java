@@ -1,4 +1,4 @@
-package webcams.controllers;
+package dogcam.controllers;
 
 import java.io.IOException;
 
