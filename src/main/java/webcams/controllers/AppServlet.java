@@ -14,7 +14,7 @@ public class AppServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		resp.setContentType("text/html");
-		resp.getWriter().print("Dogcam!");
+		resp.getWriter().print("Dogcam App!");
 	}
 
 	
