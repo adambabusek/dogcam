@@ -20,7 +20,7 @@
 		img.style.zIndex = -1;
 		img.onload = imageOnload;
 		img.onclick = imageOnclick;
-		img.src = "http://10.8.0.10:8090/?action=snapshot&n=" + (++imageNr);
+		img.src = "http://51.254.101.160:8090/?action=snapshot&n=" + (++imageNr);
 		var webcam = document.getElementById("webcam");
 		webcam.insertBefore(img, webcam.firstChild);
 	}
