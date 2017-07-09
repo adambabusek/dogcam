@@ -13,7 +13,16 @@ public class AppServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/pages/index.html");
+		String cam = request.getParameter("cam");
+		RequestDispatcher rd = null;
+		if ("0".equals(cam)) {
+			rd = getServletContext().getRequestDispatcher("/WEB-INF/pages/cam0.html");
+		} else if ("1".equals(cam)) {
+			rd = getServletContext().getRequestDispatcher("/WEB-INF/pages/cam1.html");
+		} else {
+			rd = getServletContext().getRequestDispatcher("/WEB-INF/pages/index.html");
+		}
+		
 		rd.forward(request, response);
 	}
 
